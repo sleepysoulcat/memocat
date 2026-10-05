@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>memocat</title>
+    <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
+    <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
+</head>
+
+<body>
+    <div id="tab-bar">
+        <div class="icon-logo"><img src="./assets/img/favicon.png" alt="Logo" class="logo"></div>
+        <div id="tabs">
+            <div class="tab fixed" data-id="cloud-tab"><svg width="28" height="28" viewBox="0 0 33 33" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1178_13305)">
+                        <path d="M32.6001 16.5049H31.0701V22.5949H32.6001V16.5049Z" fill="white" />
+                        <path d="M31.07 22.595H29.55V24.125H31.07V22.595Z" fill="white" />
+                        <path d="M31.07 14.9749H29.55V16.5049H31.07V14.9749Z" fill="white" />
+                        <path d="M29.5502 24.125H28.0302V25.645H29.5502V24.125Z" fill="white" />
+                        <path d="M29.5502 13.4551H28.0302V14.9751H29.5502V13.4551Z" fill="white" />
+                        <path d="M28.0301 25.645H3.65015V27.165H28.0301V25.645Z" fill="white" />
+                        <path d="M28.0301 11.9351H24.9801V13.4551H28.0301V11.9351Z" fill="white" />
+                        <path d="M24.9801 10.405H23.4501V11.935H24.9801V10.405Z" fill="white" />
+                        <path d="M23.4501 18.0249H21.9301V19.5449H23.4501V18.0249Z" fill="white" />
+                        <path d="M23.4501 14.9749H21.9301V16.5049H23.4501V14.9749Z" fill="white" />
+                        <path d="M23.4501 8.88501H21.9301V10.405H23.4501V8.88501Z" fill="white" />
+                        <path d="M21.9302 16.5049H20.4102V18.0249H21.9302V16.5049Z" fill="white" />
+                        <path d="M20.4101 18.0249H18.8801V19.5449H20.4101V18.0249Z" fill="white" />
+                        <path d="M20.4101 14.9749H18.8801V16.5049H20.4101V14.9749Z" fill="white" />
+                        <path d="M21.9301 7.35498H18.8801V8.88498H21.9301V7.35498Z" fill="white" />
+                        <path d="M14.3101 22.5949H17.3601V24.125H20.4101V21.075H14.3101V22.5949Z" fill="white" />
+                        <path d="M18.8801 5.83496H14.3101V7.35496H18.8801V5.83496Z" fill="white" />
+                        <path d="M14.31 18.0249H12.79V19.5449H14.31V18.0249Z" fill="white" />
+                        <path d="M14.31 14.9749H12.79V16.5049H14.31V14.9749Z" fill="white" />
+                        <path d="M14.3101 7.35498H11.2601V8.88498H14.3101V7.35498Z" fill="white" />
+                        <path d="M12.7901 16.5049H11.2601V18.0249H12.7901V16.5049Z" fill="white" />
+                        <path d="M11.2601 18.0249H9.74011V19.5449H11.2601V18.0249Z" fill="white" />
+                        <path d="M11.2601 14.9749H9.74011V16.5049H11.2601V14.9749Z" fill="white" />
+                        <path d="M11.2601 8.88501H9.74011V10.405H11.2601V8.88501Z" fill="white" />
+                        <path d="M9.74009 10.405H8.22009V13.455H9.74009V10.405Z" fill="white" />
+                        <path d="M8.22015 13.4551H3.65015V14.9751H8.22015V13.4551Z" fill="white" />
+                        <path d="M3.65012 24.125H2.12012V25.645H3.65012V24.125Z" fill="white" />
+                        <path d="M3.65012 14.9749H2.12012V16.5049H3.65012V14.9749Z" fill="white" />
+                        <path d="M2.1201 16.5049H0.600098V24.1249H2.1201V16.5049Z" fill="white" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1178_13305">
+                            <rect width="32" height="32" fill="white" transform="translate(0.600098 0.5)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+            </div>
+        </div>
+        <button id="new-tab-btn"><svg width="12px" height="12px" viewBox="0 0 21.00 21.00" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <title>plus [#ffffff]</title>
+                    <desc>Created with Sketch.</desc>
+                    <defs> </defs>
+                    <g id="Page-1" stroke-width="0.00021000000000000004" fill="none" fill-rule="evenodd">
+                        <g id="Dribbble-Light-Preview" transform="translate(-379.000000, -240.000000)" fill="#ffffff">
+                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                                <polygon id="plus-[#ffffff]"
+                                    points="344 89 344 91 334.55 91 334.55 100 332.45 100 332.45 91 323 91 323 89 332.45 89 332.45 80 334.55 80 334.55 89">
+                                </polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg></button>
+        <div id="search-wrap">
+            <button id="search-toggle" title="Pesquisar (Ctrl+K)">&#9906;</button>
+            <input type="text" id="search-input" placeholder="Pesquisar em todas as abas..." autocomplete="off">
+            <div id="search-results"></div>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <div class="sidemenu">
+            <button id="save-btn" class="floating-btn" title="Salvar como HTML"><svg width="22" height="22"
+                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1128_13586)">
+                        <path d="M24 2.28751H22.8525V22.86H24V2.28751Z" fill="white" />
+                        <path d="M22.8525 1.14001H21.7125V2.28751H22.8525V1.14001Z" fill="white" />
+                        <path
+                            d="M20.5725 12.57H19.425V22.86H4.56751V12.57H3.42751V22.86H1.14001V24H22.8525V22.86H20.5725V12.57Z"
+                            fill="white" />
+                        <path
+                            d="M13.71 6.85501H18.285V2.28751H13.71V6.85501ZM14.8575 3.42751H15.9975V5.71501H14.8575V3.42751Z"
+                            fill="white" />
+                        <path d="M17.1375 19.425H6.85498V20.5725H17.1375V19.425Z" fill="white" />
+                        <path d="M17.1375 15.9975H6.85498V17.145H17.1375V15.9975Z" fill="white" />
+                        <path d="M19.425 11.43H4.5675V12.57H19.425V11.43Z" fill="white" />
+                        <path
+                            d="M3.42748 6.855H4.56748V1.14H6.85498V6.855H4.56748V8.0025H6.85498V9.1425H20.5725V1.14H21.7125V0H2.28748V1.14H3.42748V6.855ZM7.99498 1.14H19.425V8.0025H7.99498V1.14Z"
+                            fill="white" />
+                        <path d="M2.28751 1.14001H1.14001V2.28751H2.28751V1.14001Z" fill="white" />
+                        <path d="M1.14 2.28751H0V22.86H1.14V2.28751Z" fill="white" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1128_13586">
+                            <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </button>
+            <button id="load-btn" class="floating-btn" title="Carregar HTML"><svg width="24" height="24"
+                    viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M3.90015 32H29.8001V7.62H28.2801V6.1H26.7601V4.57H25.2301V3.05H23.7101V1.52H22.1801V0H3.90015V32ZM5.42015 1.52H20.6601V9.14H28.2801V30.48H5.42015V1.52Z"
+                        fill="white" />
+                    <path d="M8.47021 19.81V21.33H19.1402V24.38H20.6602V21.33H23.7102V24.38H25.2302V19.81H8.47021Z"
+                        fill="white" />
+                    <path
+                        d="M23.7102 12.19H22.1802V13.71H20.6602V15.24H22.1802V16.76H23.7102V15.24H25.2302V13.71H23.7102V12.19Z"
+                        fill="white" />
+                    <path d="M23.7102 24.38H20.6602V25.9H23.7102V24.38Z" fill="white" />
+                    <path
+                        d="M9.99022 16.76H11.5202V15.24H13.0402V13.71H11.5202V12.19H9.99022V13.71H8.47021V15.24H9.99022V16.76Z"
+                        fill="white" />
+                </svg>
+            </button>
+            <input type="file" id="file-input" accept=".html,.txt" style="display:none" />
+            <button id="toggle-sidebar-btn" class="floating-btn" title="Abrir/Fechar Cadernos"><svg width="24"
+                    height="24" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30.565 1.51999H29.045V22.86H7.71497V24.38H29.045V28.95H30.565V1.51999Z" fill="white" />
+                    <path d="M29.045 28.95H15.335V30.48H29.045V28.95Z" fill="white" />
+                    <path d="M21.4249 18.29H16.8549V19.81H21.4249V18.29Z" fill="white" />
+                    <path d="M13.8049 32V27.43H27.5249V25.91H9.23492V27.43H10.7549V30.48H12.2849V32H13.8049Z"
+                        fill="white" />
+                    <path d="M24.4749 15.24H13.8049V16.76H24.4749V15.24Z" fill="white" />
+                    <path
+                        d="M15.3349 10.67H16.8549V12.19H18.3749V13.72H19.9049V12.19H21.4249V10.67H22.9449V9.14001H24.4749V6.10001H22.9449V4.57001H19.9049V6.10001H18.3749V4.57001H15.3349V6.10001H13.8049V9.14001H15.3349V10.67Z"
+                        fill="white" />
+                    <path d="M9.23497 3.04999H7.71497V21.33H9.23497V3.04999Z" fill="white" />
+                    <path d="M29.0449 0H6.18494V1.52H29.0449V0Z" fill="white" />
+                    <path d="M9.23494 28.95H6.18494V30.48H9.23494V28.95Z" fill="white" />
+                    <path d="M7.71494 24.38H6.18494V25.91H7.71494V24.38Z" fill="white" />
+                    <path d="M6.18498 1.51999H4.66498V3.04999H6.18498V1.51999Z" fill="white" />
+                    <path d="M4.66495 3.04999H3.13495V27.43H4.66495V28.95H6.18495V25.91H4.66495V3.04999Z"
+                        fill="white" />
+                </svg>
+            </button>
+            <button class="floating-btn" id="settings-btn" title="Ajustes"><svg width="24" height="24" viewBox="0 0 33 33" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1128_6717)">
+                        <path d="M32.9304 1.56946H31.4004V9.18946H32.9304V1.56946Z" fill="white" />
+                        <path
+                            d="M11.6004 9.18943V1.56943H13.1204V3.08943H14.6404V1.56943H17.6904V4.61943H19.2104V1.56943H22.2604V3.08943H23.7904V1.56943H26.8304V4.61943H28.3604V1.56943H31.4004V0.0394287H7.02042V1.56943H10.0704V9.18943H2.45042V6.13943H0.93042V30.5194H2.45042V27.4694H5.50042V25.9494H2.45042V22.8994H3.98042V21.3794H2.45042V18.3294H5.50042V16.8094H2.45042V13.7594H3.98042V12.2394H2.45042V10.7094H10.0704V30.5194H11.6004V10.7094H31.4004V9.18943H11.6004Z"
+                            fill="white" />
+                        <path d="M10.0704 30.5194H2.45042V32.0394H10.0704V30.5194Z" fill="white" />
+                        <path d="M7.02042 1.56946H5.50042V3.08946H7.02042V1.56946Z" fill="white" />
+                        <path d="M5.50042 3.08942H3.98042V4.61942H5.50042V3.08942Z" fill="white" />
+                        <path d="M3.98042 4.61945H2.45042V6.13945H3.98042V4.61945Z" fill="white" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1128_6717">
+                            <rect width="32" height="32" fill="white" transform="translate(0.93042 0.0394287)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+
+            </button>
+
+        </div>
+        <aside id="sidebar">
+            <div class="background"></div>
+            <div id="sidebar-notebooks">
+            <h2><svg width="24" height="24" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30.565 1.51999H29.045V22.86H7.71497V24.38H29.045V28.95H30.565V1.51999Z" fill="white" />
+                    <path d="M29.045 28.95H15.335V30.48H29.045V28.95Z" fill="white" />
+                    <path d="M21.4249 18.29H16.8549V19.81H21.4249V18.29Z" fill="white" />
+                    <path d="M13.8049 32V27.43H27.5249V25.91H9.23492V27.43H10.7549V30.48H12.2849V32H13.8049Z"
+                        fill="white" />
+                    <path d="M24.4749 15.24H13.8049V16.76H24.4749V15.24Z" fill="white" />
+                    <path
+                        d="M15.3349 10.67H16.8549V12.19H18.3749V13.72H19.9049V12.19H21.4249V10.67H22.9449V9.14001H24.4749V6.10001H22.9449V4.57001H19.9049V6.10001H18.3749V4.57001H15.3349V6.10001H13.8049V9.14001H15.3349V10.67Z"
+                        fill="white" />
+                    <path d="M9.23497 3.04999H7.71497V21.33H9.23497V3.04999Z" fill="white" />
+                    <path d="M29.0449 0H6.18494V1.52H29.0449V0Z" fill="white" />
+                    <path d="M9.23494 28.95H6.18494V30.48H9.23494V28.95Z" fill="white" />
+                    <path d="M7.71494 24.38H6.18494V25.91H7.71494V24.38Z" fill="white" />
+                    <path d="M6.18498 1.51999H4.66498V3.04999H6.18498V1.51999Z" fill="white" />
+                    <path d="M4.66495 3.04999H3.13495V27.43H4.66495V28.95H6.18495V25.91H4.66495V3.04999Z"
+                        fill="white" />
+                </svg>&nbsp;Cadernos</h2>
+            <ul id="topic-list"></ul>
+            </div>
+
+            <div id="sidebar-settings" hidden>
+                <h2>Ajustes</h2>
+                <label for="fs-range">Tamanho da fonte <span id="fs-value">18px</span></label>
+                <div class="fs-row">
+                    <button id="fs-minus" title="Diminuir">A−</button>
+                    <input type="range" id="fs-range" min="10" max="40" step="1" value="18">
+                    <button id="fs-plus" title="Aumentar">A+</button>
+                </div>
+                <button id="fs-reset" class="fs-reset">Restaurar padrão (18px)</button>
+            </div>
+        </aside>
+
+        <main id="editor-container">
+            
+            <div id="editor" style="display: none;"></div>
+<div class="itens-bar">
+        <div class="format-button" data-action="italic" title="Itálico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 4H18V6H15V10H13V6H12V4ZM11 14V10H13V14H11ZM11 14V18H12V20H6V18H9V14H11Z" fill="black"/>
+</svg>
+</div>
+        <div class="format-button" data-action="bold" title="Negrito"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-outside-1_6145_40" maskUnits="userSpaceOnUse" x="5" y="3" width="14" height="18" fill="black">
+<rect fill="white" x="5" y="3" width="14" height="18"/>
+<path d="M14 4V6H8V11H14V6H16V13H8V18H16V20H6V4H14ZM18 18H16V13H18V18Z"/>
+</mask>
+<path d="M14 4V6H8V11H14V6H16V13H8V18H16V20H6V4H14ZM18 18H16V13H18V18Z" fill="black"/>
+<path d="M14 4H14.8V3.2H14V4ZM8 6V5.2H7.2V6H8ZM8 11H7.2V11.8H8V11ZM14 11V11.8H14.8V11H14ZM16 6H16.8V5.2H16V6ZM8 13V12.2H7.2V13H8ZM8 18H7.2V18.8H8V18ZM16 20V20.8H16.8V20H16ZM6 20H5.2V20.8H6V20ZM6 4V3.2H5.2V4H6ZM18 18V18.8H18.8V18H18ZM18 13H18.8V12.2H18V13ZM14 4H13.2V6H14H14.8V4H14ZM14 6V5.2H8V6V6.8H14V6ZM8 6H7.2V11H8H8.8V6H8ZM8 11V11.8H14V11V10.2H8V11ZM14 11H14.8V6H14H13.2V11H14ZM14 6V6.8H16V6V5.2H14V6ZM16 6H15.2V13H16H16.8V6H16ZM16 13V12.2H8V13V13.8H16V13ZM8 13H7.2V18H8H8.8V13H8ZM8 18V18.8H16V18V17.2H8V18ZM16 18H15.2V20H16H16.8V18H16ZM16 20V19.2H6V20V20.8H16V20ZM6 20H6.8V4H6H5.2V20H6ZM6 4V4.8H14V4V3.2H6V4ZM18 18V17.2H16V18V18.8H18V18ZM16 18H16.8V13H16H15.2V18H16ZM16 13V13.8H18V13V12.2H16V13ZM18 13H17.2V18H18H18.8V13H18Z" fill="black" mask="url(#path-1-outside-1_6145_40)"/>
+</svg>
+</div>
+        <div class="format-button" data-action="underline" title="Sublinhado"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8 4H6V14H8V16H16V14H18V4H16V14H8V4ZM19 18H5V20H19V18Z" fill="black"/>
+</svg>
+</div>
+        <div class="format-button" data-action="strike" title="Riscado"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7 4H17H19V8H17V6H7V4ZM7 6V9H5V6H7ZM7 18H17V20H7H5V16H7V18ZM17 13H3V11H21V13H19V18H17V13Z" fill="black"/>
+</svg>
+</div>
+        <div class="format-button" data-action="blockquote" title="Citação"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 18H7V16H9V18ZM19 18H17V16H19V18ZM9 8H11V16H9V14H5V12H3V8H5V6H9V8ZM19 8H21V16H19V14H15V12H13V8H15V6H19V8Z" fill="black"/>
+</svg>
+</div>
+        <span class="bar-sep"></span>
+        <div class="format-button" data-action="list" title="Lista"><svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#000001"><path d="M31.24 23.62h-1.52v3.05h1.52zm0-9.15h-1.52v3.05h1.52zm0-9.14h-1.52v3.05h1.52zm-1.52 21.34H11.43v1.52h18.29zm0-9.15H11.43v1.53h18.29zm0-9.14H11.43V9.9h18.29zm0 13.71H11.43v1.53h18.29zm0-9.14H11.43v1.52h18.29zm0-9.14H11.43v1.52h18.29zM11.43 23.62H9.91v3.05h1.52zm0-9.15H9.91v3.05h1.52zm0-9.14H9.91v3.05h1.52zM.76 26.67h1.53v1.52h3.05v-1.52h1.52v-3.05H5.34v-1.53H2.29v1.53H.76zm0-9.15h1.53v1.53h3.05v-1.53h1.52v-3.05H5.34v-1.52H2.29v1.52H.76zM2.29 5.33H.76v3.05h1.53V9.9h3.05V8.38h1.52V5.33H5.34V3.81H2.29z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h32v32H0z"/></clipPath></defs></svg></div>
+        <div class="format-button" data-action="code" title="Bloco de código"><svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#000001"><path d="M1.52 9.14h28.96v19.81H32V3.05h-1.52v4.57H1.52V3.05H0v25.9h1.52zm28.96 19.81H1.52v1.53h28.96z"/><path d="M4.57 12.19v13.72h22.86V12.19zm9.14 7.62h-1.52v1.52h-1.52v1.53H9.14v-1.53h1.53v-1.52h1.52v-1.52h-1.52v-1.53H9.14v-1.52h1.53v1.52h1.52v1.53h1.52zm9.15 0h-6.1v-1.52h6.1zM10.67 4.57H9.14V6.1h1.53zm-3.05 0H6.1V6.1h1.52zm-3.05 0H3.05V6.1h1.52zm25.91-3.05H1.52v1.53h28.96z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h32v32H0z"/></clipPath></defs></svg></div>
+        <div class="format-button" data-action="link" title="Link"><svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M29.715 20.575h-1.52v6.09h1.52zm-1.52 6.09h-1.53v1.53h1.53zm0-7.61h-1.53v1.52h1.53zm-1.53-1.53h-1.52v1.53h1.52zm0 10.67h-6.09v1.52h6.09zm-1.52-12.19h-1.53v1.52h1.53zm-1.53-1.53h-4.57v1.53h4.57zm-3.04 12.19h-1.53v1.53h1.53zm-1.53-1.52h-1.52v1.52h1.52z" fill="#000001"/><path d="M14.475 11.435h-3.05v3.04h1.53v1.53h1.52v1.52h1.53v1.53h1.52v1.52h3.05v-3.05h-1.53v-1.52h-1.52v-1.53h-1.52v-1.52h-1.53zm3.05 12.19h-1.52v1.52h1.52zm0-15.24h-1.52v4.57h1.52z" fill="#000001"/><path d="M16.005 19.055h-1.53v4.57h1.53zm0-12.19h-1.53v1.52h1.53zm-1.53-1.53h-1.52v1.53h1.52zm-1.52-1.52h-1.53v1.52h1.53zm0 12.19h-4.57v1.52h4.57zm-4.57-1.53h-1.53v1.53h1.53zm3.04-12.19h-6.09v1.53h6.09zm-4.57 10.67h-1.52v1.52h1.52zm-1.52-1.52h-1.52v1.52h1.52zm0-7.62h-1.52v1.52h1.52zm-1.52 1.52h-1.53v6.1h1.53z" fill="#000001"/></svg></div>
+        <div class="format-button" data-action="image" title="Imagem (link ou arquivo)"><svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25.905 23.615h-1.52v1.53h-1.53v1.52h-1.52v1.53h-1.53v1.52h4.58v-1.52h1.52v-1.53h1.52v-4.57h-1.52zm-1.52-10.66h1.52V.765h-3.05v1.52h1.53zm0 0h-1.53v1.52h1.53zm-1.53-10.67h-1.52v1.53h1.52z" fill="#000001"/><path d="M21.335 26.665v-1.52h1.52v-1.53h1.53v-1.52h1.52v-1.52h-4.57v1.52h-1.53v1.52h-1.52v4.58h1.52v-1.53zm1.52-12.19h-3.05v1.53h3.05zm-1.52-10.66h-1.53v1.52h1.53z" fill="#000001"/><path d="M19.805 16.005h-7.61v1.52h3.04v13.71h1.53v-13.71h3.04zm0-13.72h-1.52v1.53h1.52zm-1.52-1.52h-4.57v1.52h4.57zm-4.57 1.52h-1.52v1.53h1.52z" fill="#000001"/><path d="M12.195 22.095h-1.53v-1.52h-4.57v1.52h1.52v1.52h1.53v1.53h1.52v1.52h1.53v1.53h1.52v-4.58h-1.52zm0-7.62h-3.05v1.53h3.05zm0-10.66h-1.53v1.52h1.53zm-1.53 22.85h-1.52v-1.52h-1.53v-1.53h-1.52v-1.52h-1.52v4.57h1.52v1.53h1.52v1.52h4.58v-1.52h-1.53zm0-24.38h-1.52v1.53h1.52zm-1.52 10.67h-1.53v1.52h1.53zm-1.53-10.67h1.53V.765h-3.05v12.19h1.52z" fill="#000001"/></svg></div>
+        <div class="format-button" data-action="clear" title="Limpar formatação">Tx</div>
+    </div>
+    <div id="image-pop" hidden>
+        <input type="url" id="image-url" placeholder="Link da imagem (https://...)">
+        <button id="image-url-ok">Inserir</button>
+        <label class="file-btn">Arquivo<input type="file" id="image-file" accept="image/*" hidden></label>
+    </div>
+            <div id="cloud-sync-container">
+                <img src="/assets/img/banner.gif">
+                <h1>memocat -> cloud</h1>
+                <input type="password" id="cloud-password" placeholder="Senha" autocomplete="current-password">
+                <button id="connect-cloud-btn">-></button>
+
+                <p><label><input type="checkbox" id="remember-pw" style="width:auto;padding:0;"> Hey, não me esqueça! ｡ﾟ･ (&gt;﹏&lt;) ･ﾟ｡</label></p>
+                <p id="cloud-status"></p>
+            </div>
+
+            <div id="cloud-editor" class="editor-area" style="display: none;"></div>
+        </main>
+    </div>
+
+    
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="editor.js"></script>
+    <script src="search.js"></script>
+    <script src="cofre.js"></script>
+    <script src="cloud.js"></script>
+
+
+
+
+</body>
+
+</html>
